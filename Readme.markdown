@@ -83,8 +83,6 @@ function slug_apply_custom_fields($wp_customize){
       'panel' => 'global'
     )
   );
-
-  $themeOptions->applyThemeOptions();
 }
 
 add_action('customize_register', 'slug_apply_custom_fields');

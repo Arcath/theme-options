@@ -10,6 +10,8 @@ class ThemeOptions {
   public function __construct($themeSlug = null){
     $this->themeSlug = $themeSlug;
     $this->themeOptions = array();
+
+    add_action('customize_register', array($this, 'applyThemeOptions'));
   }
 
   public function themeOption($name){
