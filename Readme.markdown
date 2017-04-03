@@ -98,3 +98,19 @@ echo($themeOptions->themeOption('email'));
 ```
 
 Theme Options handles returning the default if it has not been set in the post meta etc...
+
+Every option is passed through a filter before being returned. This allows you to change defaults per page template etc...
+
+```php
+<?php
+// Template Name: RED
+global $themeOptions;
+
+add_filter('theme_slug_color', function($color){
+  // Over ride option to red on this page
+  return "#f00";
+})
+
+echo($themeOptions->themeOption('color'));
+?>
+```
