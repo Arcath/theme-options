@@ -2,7 +2,7 @@
   "name": "arcath/theme-options",
   "description": "Class for defining theme options and retrieving them.",
   "require": {
-    "php": "^5.3.3 || ^7.0"
+    "php": ">5.3.3"
   },
   "license": "MIT",
   "authors": [
